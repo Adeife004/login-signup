@@ -19,8 +19,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    max-width: 700px;
+    width: 80%;
+    max-width: 1000px;
     background: transparent;
     border-radius: 10px;
     overflow: hidden;
@@ -29,11 +29,11 @@ body {
 
 /* Sign In Form Section */
 .signin {
-    width: 45%;
-    padding: 20px;
-    height: 60vh;
+    width: 50%;
+    padding: 40px;
+    height: 80vh;
     background: #fff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@ body {
 
 .signin h4 {
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #007bff;
     font-size: 18px;
 }
@@ -98,9 +98,9 @@ body {
 /* Info Section */
 .info {
     background-color: #1687ff;
-    width: 45%;
-    height: 50vh;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 60vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,23 +110,25 @@ body {
 }
 
 .info h4 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 16px;
 }
 
 .info button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     background-color: #fff;
     color: #007bff;
-    border: none;
-    border-radius: 4px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    transition: all 0.3s ease;
 }
 
 .info button:hover {
     background-color: #0056b3;
     color: #fff;
+    border-color: #0056b3;
 }
 
 /* Responsive Design */
