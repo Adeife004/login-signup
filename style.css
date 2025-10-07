@@ -247,3 +247,26 @@ body {
     color: #fff;
     border-color: #0056b3;
 }
+
+
+/* Media responsiveness */
+@media (max-width: 768px) {
+
+    .signup-section,
+    .signin-section {
+        flex-direction: column;
+    }
+
+    .login h4,
+    .info h4 {
+        margin-top: 20px;
+    }
+
+    .login,
+    .signin,
+    .sign-up,
+    .info {
+        width: 100%;
+        height: auto;
+    }
+}
