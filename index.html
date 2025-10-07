@@ -4,50 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <!-- title -->
+    <title>Login & Sign Up</title>
+    <!-- external css -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- signup Section -->
-    <div class="signup-section">
+    <!-- forms-wrapper -->
+    <div class="forms-wrapper" id="formsWrapper">
 
-        <!-- Login Section -->
-        <div class="login">
-            <h4 >Already have an account?</h4>
-            <a href="login.html"><button>Login</button></a>
+        <!-- ========== SIGN UP SECTION ========== -->
+        <div class="form-container" id="signupContainer">
+
+            <!-- signup-section -->
+            <div class="signup-section">
+
+                <!-- Login Redirect Section -->
+                <div class="login">
+                    <h4>Already have an account?</h4>
+                    <button id="goToLogin">Login</button>
+                </div>
+
+                <!-- Signup Form -->
+                <div class="sign-up">
+                    <form id="signup-form" action="" method="POST">
+                        <h4>Sign Up</h4>
+
+                        <div class="signup">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                        </div>
+
+                        <div class="signup">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="signup">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                required>
+                        </div>
+
+                        <div class="signup">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" name="confirm-password"
+                                placeholder="Confirm your password" required>
+                        </div>
+
+                        <button type="submit" class="signup-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <!-- signup Section -->
-        <div class="sign-up">
-            <form id="signup-form" action="" method="POST">
-                <h4>Sign Up</h4>
+        <!-- ========== LOGIN SECTION ========== -->
+        <div class="form-container" id="loginContainer">
 
-                <div class="signup">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <!-- signin-section -->
+            <div class="signin-section">
+
+                <!-- Sign In Form -->
+                <div class="signin">
+                    <form id="signin-form" action="" method="POST">
+                        <h4>Sign In</h4>
+
+                        <div class="signin-input">
+                            <label for="signin-username">Username</label>
+                            <input type="text" id="signin-username" name="username" placeholder="Enter your username"
+                                required>
+                        </div>
+
+                        <div class="signin-input">
+                            <label for="signin-password">Password</label>
+                            <input type="password" id="signin-password" name="password"
+                                placeholder="Enter your password" required>
+                        </div>
+
+                        <button type="submit" class="signin-btn">Login</button>
+
+                        <div class="forgot-password">
+                            <a href="#forgot-password">Forgot Password?</a>
+                        </div>
+                    </form>
                 </div>
 
-                <div class="signup">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <!-- info -->
+                <div class="info">
+                    <h4>Don't have an account?</h4>
+                    <button type="button" id="goToSignup">Sign Up</button>
                 </div>
-
-                <div class="signup">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div>
-
-                <div class="signup">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" name="confirm-password"
-                        placeholder="Confirm your password" required>
-                </div>
-
-                <button type="submit" class="signup-btn">Sign Up</button>
-            </form>
+            </div>
         </div>
     </div>
+
+    <!-- external js -->
+    <script src="script.js"></script>
 
 </body>
 

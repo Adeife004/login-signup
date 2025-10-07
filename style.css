@@ -1,21 +1,20 @@
-/* Reset and Global Styles */
+/* Reset Styles */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #db2845;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
     height: 100vh;
 }
 
-/* Signup Section Styles */
+/* ========== SIGN UP SECTION ========== */
+#signupContainer {
+    background-color: #db2845;
+}
+
 .signup-section {
     display: flex;
     justify-content: center;
@@ -28,7 +27,6 @@ body {
     position: relative;
 }
 
-/* Login Section */
 .login {
     background-color: #ee526c;
     width: 50%;
@@ -64,10 +62,9 @@ body {
     border-color: #db2845;
 }
 
-/* Sign-Up Section */
 .sign-up {
     width: 50%;
-    height: 80vh; 
+    height: 80vh;
     padding: 40px;
     background-color: #fff;
     display: flex;
@@ -103,7 +100,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer; 
+    cursor: pointer;
     font-size: 16px;
     transition: all 0.3s ease;
 }
@@ -112,25 +109,141 @@ body {
     background-color: #ee526c;
 }
 
-/* Center the Sections */
-.signup-section {
-    align-items: center; 
-    flex-wrap: wrap; 
+.forms-wrapper {
+    width: 200%;
+    display: flex;
+    transition: transform 0.6s ease-in-out;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .signup-section {
-        flex-direction: column;
-        width: 90%;
-        height: auto;
-    }
+.form-container {
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-    .login,
-    .sign-up {
-        width: 100%;
-        height: auto; 
-        padding: 20px;
-        text-align: center;
-    }
+.slide-active {
+    transform: translateX(-50%);
+}
+
+/* ========== LOGIN SECTION ==========   */
+#loginContainer {
+    background-color: #007bff;
+}
+
+.signin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.signin {
+    width: 50%;
+    padding: 40px;
+    height: 80vh;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signin h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 18px;
+}
+
+.signin-input {
+    margin-bottom: 10px;
+}
+
+.signin-input label {
+    font-size: 14px;
+}
+
+.signin-input input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.signin-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.signin-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Forgot Password Link */
+.forgot-password {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Info Section */
+.info {
+    background-color: #1687ff;
+    width: 50%;
+    height: 60vh;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.info h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.info button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.info button:hover {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
 }
